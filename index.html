@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moja Wiosenna Aplikacja</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial;
+  background: linear-gradient(135deg, #b7f8c8, #fff7a8, #ffd6e8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  padding: 35px;
+  border-radius: 30px;
+}
+
+h1 {
+  color: #2e7d32;
+}
+
+#hello {
+  display: none;
+  font-size: 40px;
+  font-weight: bold;
+  color: #388e3c;
+  margin: 20px 0;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: none;
+  background: #7bd88f;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+  <h1>🌸 Moja Wiosenna Aplikacja 🌸</h1>
+  <div id="hello">Hello World</div>
+  <button onclick="toggleHello()">Kliknij mnie</button>
+</div>
+
+<script>
+function toggleHello() {
+  const hello = document.getElementById("hello");
+
+  if (hello.style.display === "none" || hello.style.display === "") {
+    hello.style.display = "block";
+  } else {
+    hello.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
